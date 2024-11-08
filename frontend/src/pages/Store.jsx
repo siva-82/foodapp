@@ -16,7 +16,7 @@ function Store() {
     setSortF(false);
 
     if (e.target.value === "popular")
-      setfilterd([...foodArray.filter((food) => food.popular == true)]);
+      setfilterd([...foodArray.filter((food) => food.popular === true)]);
     if (e.target.value === "discount")
       setfilterd([...foodArray.filter((food) => food.discount >= 5)]);
     if (e.target.value === "all") return setFilterF(false);
