@@ -1,10 +1,10 @@
 import React from "react";
-import HowItWorks from "./HowItWorks";
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./SearchSection.css";
-import { Card } from "react-bootstrap";
+
 
 import {
   IoIosArrowDropleftCircle,
@@ -13,7 +13,7 @@ import {
 import { Link } from "react-router-dom";
 
 function NextArrow(props) {
-  const { className, style, onClick } = props;
+  const { className,  onClick } = props;
   return (
     
       <div
@@ -31,7 +31,7 @@ function NextArrow(props) {
 }
 
 function PrevArrow(props) {
-  const { className, style, onClick } = props;
+  const { className, onClick } = props;
   return (
   
       <div
@@ -121,7 +121,7 @@ const SearchSection = ({ data }) => {
                   {/* <img src="/hubble.jpg" alt="hubble" style={{borderRadius:"50px",height:"100px",width:"100px", margin:"10px"}} /> */}
                   <img
                     src={meal?.foodImage}
-                    
+                    alt=""
                     style={{
                       borderRadius: "50px",
                       height: "100px",

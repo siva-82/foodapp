@@ -2,7 +2,7 @@ import { Row, Col } from "react-bootstrap";
 import { foodArray } from "../foodStore/foodArray";
 // import ProductCard from "../components/ProductCard";
 import FoodCard from "../components/FoodCard";
-import { useContext, useRef, useState } from "react";
+import {  useState } from "react";
 import "../App.css";
 
 function Store() {
@@ -15,11 +15,11 @@ function Store() {
   const filterFood = (e) => {
     setSortF(false);
 
-    if (e.target.value == "popular")
+    if (e.target.value === "popular")
       setfilterd([...foodArray.filter((food) => food.popular == true)]);
-    if (e.target.value == "discount")
+    if (e.target.value === "discount")
       setfilterd([...foodArray.filter((food) => food.discount >= 5)]);
-    if (e.target.value == "all") return setFilterF(false);
+    if (e.target.value === "all") return setFilterF(false);
 
     setFilterF(true);
   };
@@ -31,12 +31,12 @@ function Store() {
   const sortFood = (e) => {
     setFilterF(false);
 
-    if (e.target.value == "") return;
-    if (e.target.value == "high")
+    if (e.target.value === "") return;
+    if (e.target.value === "high")
       setSorted([...foodArray.sort((a, b) => b.price - a.price)]);
-    if (e.target.value == "low")
+    if (e.target.value === "low")
       setSorted([...foodArray.sort((a, b) => a.price - b.price)]);
-    if (e.target.value == "popularity")
+    if (e.target.value === "popularity")
       setSorted([...foodArray.sort((a, b) => b.stars - a.stars)]);
     setSortF(true);
   };

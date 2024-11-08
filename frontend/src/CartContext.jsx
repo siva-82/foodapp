@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-import { foodArray,getFoodData } from "./foodStore/foodArray";
+import { getFoodData } from "./foodStore/foodArray";
 
 export const CartContext = createContext({
   items: [],
@@ -56,7 +56,7 @@ export function CartProvider({ children }) {
   function removeOneFromCart(id){
     const quantity=getFoodQuantity(id)
 
-    if(quantity==1){
+    if(quantity===1){
         deleteFromCart(id);
     }else{
         setCartFoods(
@@ -71,7 +71,7 @@ export function CartProvider({ children }) {
   function deleteFromCart(id) {
     setCartFoods(
         cartFoods=>cartFoods.filter(currentFood=>{
-            return currentFood.id!=id
+            return currentFood.id!==id
         })
     )
   }
