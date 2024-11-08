@@ -1,0 +1,406 @@
+.installSection__install {
+  background-position: bottom !important;
+
+   /* background: url("../wave.svg"); */
+  background-repeat: no-repeat !important;
+  background-color: rgb(255, 241, 241); 
+}
+.topSection__form {
+  padding: 50px;
+}
+.installSection__second {
+  width: 400px;
+}
+.installSection__app p,
+h6 {
+  margin: 0 !important;
+}
+.installSection__StoreContainer img {
+  width: 25px;
+  height: 30px;
+}
+.installSection__StoreContainer {
+  margin: 10px 0 10px 0;
+}
+
+.bottomSection button {
+  margin: 10px !important;
+  font-size: 12px !important;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #f17228 !important;
+}
+.bottomSection button:hover {
+  background-color: #f15e28 !important;
+  box-shadow: 0 8px 35px 10px rgb(241 114 40 / 0.44);
+}
+.footerRow {
+  width: 100%;
+}
+.footer__form button {
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #f17228 !important;
+}
+.footer__form button:hover {
+  background-color: #f15e28 !important;
+  box-shadow: 0 8px 35px 10px rgb(241 114 40 / 0.44) !important;
+}
+.proceed__button {
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #f17228 !important;
+}
+.proceed__button:hover {
+  background-color: #f15e28 !important;
+  box-shadow: 0 10px 20px 5px rgb(241 114 40 / 0.44) !important;
+}
+@media (max-width: 480px) {
+  .topSection {
+    margin-top: 80px !important;
+    height: 250px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .topSection__title {
+    font-size: 10px !important;
+  }
+  .topSection__image {
+    display: none;
+  }
+  .topSection__form {
+    padding: 0px !important;
+  }
+  /* ##################### */
+  /* ##############  featuresSection */
+  .featuresSection {
+    font-size: 10px !important;
+  }
+  .featuresSection img {
+    width: 60px !important;
+    height: 60px !important;
+    font-size: 10px !important;
+  }
+  .featuresSection h5 {
+    font-size: 10px !important;
+  }
+
+  /* ##### installSection */
+  .installSection__container {
+    height: 100px !important;
+  }
+  .installSection__container img {
+    margin: 8px !important;
+    width: 30px !important;
+  }
+  .installSection__container h2 {
+    margin: 0;
+    font-size: 15px !important;
+  }
+  .divider {
+    margin: 0px !important;
+    height: 30px !important;
+  }
+  .installSection__containerMargin h2 {
+    margin: 1px;
+    font-size: 15px !important;
+  }
+
+  .installSection__second {
+    width: 250px !important;
+  }
+  .phone {
+    width: 250px;
+    height: 280px;
+  }
+  .installSection__second h1 {
+    font-size: 15px !important;
+  }
+  .installSection__second p {
+    font-size: 8px !important;
+  }
+  .installSection__app {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .installSection__Store {
+    /* width: 100px !important; */
+    padding: 2px !important;
+    margin: 2px !important;
+  }
+  .installSection__app img {
+    width: 20px !important;
+  }
+  .installSection__app h6 {
+    font-size: 8px !important;
+  }
+  .installSection__app p {
+    font-size: 9px !important;
+    margin: 0px;
+  }
+  /* ##################### */
+  /* ##### cartSection */
+  .cartSection__container {
+    width: 400px !important;
+  }
+  .cartSection h2 {
+    font-size: 15px !important;
+  }
+  .cartSection p {
+    font-size: 8px;
+    margin: 2px 0 2px 0 !important;
+  }
+  .cartSection button {
+    font-size: 10px;
+    margin: 2px 0 2px 0 !important;
+    padding: 2px 1px 2px 1px !important;
+    width: 95px !important;
+    border-radius: 0 !important;
+  }
+  .cartSection,
+  .cartSection img {
+    height: 180px !important;
+  }
+
+  /* ############################ */
+  /* ##### bottomSection*/
+  .bottomSection {
+    height: 150px !important;
+  }
+  .bottomSection h1 {
+    width: 150px !important;
+    font-size: 12px !important;
+  }
+  .bottomSection button {
+    margin: 10px !important;
+    font-size: 8px !important;
+    padding: 8px !important;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #f17228 !important;
+  }
+  .bottomSection button:hover {
+    background-color: red !important;
+  }
+  .bottomSection span {
+    font-size: 15px;
+  }
+  /* ################# */
+  .footer__li ul,
+  li,
+  td,
+  tr {
+    font-size: 10px !important;
+  }
+  .footerRow {
+    width: -webkit-fill-available;
+  }
+  .foot3 {
+    display: none;
+  }
+
+  .footer__form button,
+  input {
+    height: 30px !important;
+    font-size: 10px;
+  }
+  .footer__subscription {
+    margin-top: 20px !important;
+    font-size: 10px;
+  }
+  .footer__subscription h3 {
+    margin-top: 1px !important;
+    font-size: 15px;
+  }
+  .footer__copyrights {
+    font-size: 10px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .topSection {
+    margin-top: 80px !important;
+    height: 300px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .topSection__title {
+    font-size: 15px !important;
+  }
+  .topSection__image {
+    display: none;
+    border-radius: 50px;
+    right: 115px !important;
+    height: 80% !important;
+    bottom: 0;
+    /* height: 75px; */
+    width: 200px;
+  }
+  /* ############# */
+
+  /* ##### installSection */
+  .installSection__container {
+    height: 100px !important;
+    width: 650px !important;
+    display: flex;
+
+    justify-content: center;
+  }
+  .installSection__container img {
+    margin: 0 10px 0 10px !important;
+
+    width: 50px !important;
+  }
+  .installSection__container h2 {
+    margin: 1px;
+    font-size: 20px !important;
+  }
+  .divider {
+    margin: 10px !important;
+    height: 30px !important;
+  }
+  .installSection__containerMargin h2 {
+    margin: 1px;
+    font-size: 20px !important;
+  }
+
+  .installSection__second {
+    width: 300px !important;
+  }
+  .phone {
+    width: 350px;
+    height: 280px;
+  }
+  .installSection__second h1 {
+    font-size: 20px !important;
+  }
+  .installSection__second p {
+    font-size: 12px !important;
+  }
+  .installSection__app {
+    display: flex !important;
+  }
+
+  .installSection__app img {
+    width: 20px !important;
+  }
+  .installSection__app h6 {
+    font-size: 12px !important;
+    margin: 0 !important;
+  }
+  .installSection__app p {
+    font-size: 10px !important;
+    margin: 0px;
+  }
+  /* ################### */
+  /* .cartSection__container */
+  .cartSection__container {
+    width: 720px !important;
+  }
+  .cartSection button {
+    font-size: 10px;
+    /* margin: 2px 0 2px 0 !important;
+  padding: 2px 1px 2px 1px !important;*/
+    width: 200px !important;
+    border-radius: 5px !important;
+  }
+  .cartSection span {
+    font-size: 20px;
+  }
+  /* ############ */
+  /* ##### bottomSection*/
+  .bottomSection {
+    height: 200px !important;
+  }
+  .bottomSection h1 {
+    width: 250px !important;
+    font-size: 20px;
+  }
+  .bottomSection button {
+    margin: 10px !important;
+    font-size: 12px !important;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #f17228 !important;
+  }
+  .bottomSection button:hover {
+    background-color: #f15e28 !important;
+  }
+  .bottomSection span {
+    font-size: 18px;
+  }
+  /* ############### */
+
+  .footer__form input,
+  button {
+    font-size: 15px !important;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .topSection {
+    height: 400px !important;
+  }
+  .topSection__title {
+    font-size: 20px !important;
+  }
+  .topSection__image {
+    border-radius: 50px;
+    right: 115px !important;
+    height: 80% !important;
+    bottom: 0;
+    /* height: 75px; */
+    width: 250px;
+  }
+  /*############  */
+  /* ########## cartSection */
+  .cartSection__container {
+    width: 1000px !important;
+  }
+  .cartSection button {
+    font-size: 10px;
+    margin: 2px 0 2px 0 !important;
+    padding: 2px 1px 2px 1px !important;
+    width: 50px !important;
+    border-radius: 0 !important;
+  }
+  /* ############## */
+  /* ########### installSection */
+  .installSection__second {
+    width: 400px !important;
+  }
+  .phone {
+    width: 400px !important;
+    height: 280px !important;
+  }
+  .installSection__second h1 {
+    font-size: 20px !important;
+  }
+  .installSection__second p {
+    font-size: 10px !important;
+  }
+  .installSection__app {
+    display: flex !important;
+  }
+
+  .installSection__Store {
+    /* width: 100px !important; */
+    padding: 2px !important;
+    margin: 2px !important;
+  }
+  .installSection__app img {
+    width: 25px !important;
+  }
+  .installSection__app h6 {
+    font-size: 12px !important;
+  }
+  .installSection__app p {
+    font-size: 10px !important;
+    margin: 0px;
+  }
+
+  /* ########### */
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+}

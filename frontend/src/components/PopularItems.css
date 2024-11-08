@@ -1,0 +1,70 @@
+.slick-list{
+    padding:0 0px 0 5px;
+    margin: 0 8px 0 10px;
+}
+/* .card {
+    width:300px!important
+}
+.discount{
+    top: 248px !important;
+} */
+
+
+  .slick-slide-box {
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+  
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+.slick-slide >div{
+  display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+}
+
+@media (max-width:480px){
+  .slick-next-pop {
+    right:8px !important;
+}
+.slick-prev-pop {    
+ left: 5px !important;
+}
+}
+@media (min-width:481px) and (max-width:768px){
+  .slick-next {
+    right:-10px !important;
+}
+.slick-prev-pop {    
+ left: -15px !important;
+}
+}
+@media (min-width:769px) and (max-width:1024px){
+.slick-next-pop {
+  right:-20px !important;
+}
+.slick-prev-pop {    
+left: -20px !important;
+}}
+@media (min-width:1025px) and (max-width:1200px){
+  .slick-next-pop {
+    right:-10px !important;
+}
+.slick-prev-pop {    
+ left: -15px !important;
+}
+}
