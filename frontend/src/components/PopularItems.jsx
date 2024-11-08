@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+// import React, { useRef } from 'react'
 import FoodCard from './FoodCard'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -82,7 +82,7 @@ const PopularItems = ({data}) => {
     prevArrow: <SamplePrevArrow />
     
   }
-  const sliderRef = useRef();
+  // const sliderRef = useRef();
   return (
     <>
       
@@ -91,7 +91,7 @@ const PopularItems = ({data}) => {
        
       <div className="container"  style={{height:"500px" }}>
       <Slider className='slick-slide-box' {...settings}>
-      {data?.slice(0,10)?.map((food)=> <FoodCard foodData={food}/> )}
+      {data?.slice(0,10)?.map((food,i)=> <FoodCard key={i} foodData={food}/> )}
     </Slider>
 </div>
 </div>
