@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Home.css";
 import "../App.css";
 const InstallAppSection = () => {
@@ -96,7 +96,7 @@ const InstallAppSection = () => {
                       borderRadius:'5px'
                     }}
                   >
-                  <div className="installSection__StoreContainer"><img src='/DownloadGlogo.png'></img></div>
+                  <div className="installSection__StoreContainer"><img src='/DownloadGlogo.png' alt=""></img></div>
                    <div className="mx-1"><p> get it on </p><h6>Google Play </h6></div>
                   </div>
                   
@@ -110,7 +110,7 @@ const InstallAppSection = () => {
                       borderRadius:'5px'
                     }}
                   >
-                    <div className="installSection__StoreContainer"><img src='/DownloadAlogo.png'></img></div>
+                    <div className="installSection__StoreContainer"><img src='/DownloadAlogo.png' alt=""></img></div>
                    <div className="mx-1"><p> Download it on </p><h6>Apple Store</h6></div>
                   </div>
                 </div>

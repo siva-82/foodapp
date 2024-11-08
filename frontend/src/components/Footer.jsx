@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 
 const Footer = () => {
-    const [cities1]=useState(["Finland","Denmark","Iceland","Sweden",,, ])
+    const [cities1]=useState(["Finland","Denmark","Iceland","Sweden" ])
     const [cities2]=useState(["Netherlands","Norway","Luxembourg","Switzerland"])
     const [cities3]=useState(["Australia","New Zealand","Costa Rica","Kuwait",  ])
     const [cities4]=useState(["Netherlands","Norway","Luxembourg","Switzerland"])
     const [cities5]=useState(["Canada","Belgium","Ireland","Czechia",])
-    const [cities6]=useState([ "Lithuania","United Kingdom","Dubai","Austria"])
+    // const [cities6]=useState([ "Lithuania","United Kingdom","Dubai","Austria"])
     
     
 
@@ -17,15 +17,15 @@ const Footer = () => {
 
    <div className='w-100 d-flex justify-content-between'>
    <ul className=' d-flex flex-column mt-3 ' style={{paddingLeft:'0px',listStyle: 'none'}}>
-    {cities1.map((city)=>(<li className='mt-3'style={{textDecoration:"none"}}>{city}</li>))}</ul>
+    {cities1.map((city,i)=>(<li key={i}className='mt-3'style={{textDecoration:"none"}}>{city}</li>))}</ul>
      <ul className='  d-flex flex-column mt-3' style={{paddingLeft:'0px',listStyle: 'none'}}>
-    {cities2.map((city)=>(<li className='mt-3'style={{textDecoration:"none"}}>{city}</li>))}</ul>
+    {cities2.map((city,i)=>(<li key={i} className='mt-3'style={{textDecoration:"none"}}>{city}</li>))}</ul>
     <ul className='  d-flex flex-column mt-3' style={{paddingLeft:'0px',listStyle: 'none'}}>
-    {cities3.map((city)=>(<li className='foot3 mt-3'style={{textDecoration:"none"}}>{city}</li>))}</ul>
+    {cities3.map((city,i)=>(<li key={i} className='foot3 mt-3'style={{textDecoration:"none"}}>{city}</li>))}</ul>
      <ul className='  d-flex flex-column mt-3' style={{paddingLeft:'0px',listStyle: 'none'}}>
-    {cities4.map((city)=>(<li className='mt-3'style={{textDecoration:"none"}}>{city}</li>))}</ul>
+    {cities4.map((city,i)=>(<li key={i} className='mt-3'style={{textDecoration:"none"}}>{city}</li>))}</ul>
      <ul className='  d-flex flex-column mt-3' style={{paddingLeft:'0px',listStyle: 'none'}}>
-    {cities5.map((city)=>(<li className='mt-3'style={{textDecoration:"none"}}>{city}</li>))}</ul>
+    {cities5.map((city,i)=>(<li key={i} className='mt-3'style={{textDecoration:"none"}}>{city}</li>))}</ul>
    </div>
    </div>
    <hr/>
@@ -35,13 +35,13 @@ const Footer = () => {
  <div className='d-flex justify-content-between col-sm-12 col-md-6 col-lg-6'>
    <td className='d-flex flex-column mt-3 ' style={{paddingLeft:'0px',listStyle: 'none'}}>
     <th>Company</th>
-    {cities1.map((city)=>(<tr className='mt-3'style={{textDecoration:"none"}}>{city}</tr>))}</td>
+    {cities1.map((city,i)=>(<tr key={i} className='mt-3'style={{textDecoration:"none"}}>{city}</tr>))}</td>
      <td className='  d-flex flex-column mt-3' style={{paddingLeft:'0px',listStyle: 'none'}}>
      <th>Contact</th>
-    {cities2.map((city)=>(<tr className='mt-3'style={{textDecoration:"none"}}>{city}</tr>))}</td>
+    {cities2.map((city,i)=>(<tr key={i} className='mt-3'style={{textDecoration:"none"}}>{city}</tr>))}</td>
     <td className='  d-flex flex-column mt-3' style={{paddingLeft:'0px',listStyle: 'none'}}>
     <th>Legal</th>
-    {cities3.map((city)=>(<tr className='mt-3'style={{textDecoration:"none"}}>{city}</tr>))}</td>
+    {cities3.map((city,i)=>(<tr key={i} className='mt-3'style={{textDecoration:"none"}}>{city}</tr>))}</td>
     </div>
     <div className='col-sm-12 col-md-5 col-lg-5'>
     <div className='footer__subscription w-100 d-flex flex-column '>

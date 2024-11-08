@@ -2,7 +2,7 @@ import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+
 import React, { useContext, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { LinkContainer } from "react-router-bootstrap";
@@ -10,13 +10,13 @@ import { Badge, Modal, Spinner } from "react-bootstrap";
 import { CartContext } from "../CartContext";
 import CartProduct from "../pages/CartProduct";
 
-import { useNavigate } from "react-router-dom";
+
 import { useAuth0 } from "@auth0/auth0-react";
 
 
 const NavBar = () => {
 
-  const {  user, isAuthenticated, isLoading,loginWithRedirect,logout  } = useAuth0();
+  const {  user, isAuthenticated,loginWithRedirect,logout  } = useAuth0();
 
   const cart = useContext(CartContext);
 
